@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:FxiAq6Cp7VaFq@upstream.khalidmrabti.com:27017
+      database: upstream
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: ERROR
+              ReactiveMongoTemplate: ERROR
+            repository:
+              Query: ERROR
